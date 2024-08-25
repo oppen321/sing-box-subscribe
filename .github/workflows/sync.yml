@@ -12,7 +12,8 @@ jobs:
   sync_latest_from_upstream:
     name: Sync latest commits from upstream repo
     runs-on: ubuntu-latest
-    if: ${{ github.event.repository.fork }}
+    # Remove or adjust the 'if' condition if necessary
+    # if: ${{ github.repository.fork == true }}
 
     steps:
       # Step 1: run a standard checkout action
